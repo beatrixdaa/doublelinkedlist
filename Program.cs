@@ -108,5 +108,17 @@ namespace doublelinkedlist
             return true;
 
         }
+        public void traverse() /*Traverse the list*/
+        {
+            if (listEmpty())
+                Console.WriteLine("\nList is empty");
+            else
+            {
+                Console.WriteLine("\nRecord in the ascending order of " + "roll number are:\n");
+                Node currentNode;
+                for (currentNode = START; currentNode != null; currentNode = currentNode.next)
+                    Console.Write(currentNode.rollNumber + "" + currentNode.name + "\n");
+            }
+        }
     }
 }
