@@ -77,9 +77,9 @@ namespace doublelinkedlist
             previous.next = newnode;
         }
         /*Checks whether the specified node is present*/
-        public bool Seacth(int rollNo,ref Node previous,ref Node current)
+        public bool Seacth(int rollNo, ref Node previous, ref Node current)
         {
-            for (previous =current=START;current!=null&& rollNo!=current.rollNumber;previous=current,current=current.next)
+            for (previous = current = START; current != null && rollNo != current.rollNumber; previous = current, current = current.next)
             { }
             /*the above for loop traverse the list.if the specified node *is found then the function return true,otherwise false.*/
             return (current != null);
