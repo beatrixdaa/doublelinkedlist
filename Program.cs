@@ -18,5 +18,18 @@ namespace doublelinkedlist
         public Node text;/*points to the succeeding node*/
         public Node prev;/*points to the preceeding node*/
     }
-        
+      class DoubleLinkedList
+    {
+        Node START;
+        public DoubleLinkedList()
+        {
+            START = null;
+        }
+        public void addNode() /*Adds anew node*/
+        {
+            int rollNo;
+            string nm;
+            Console.Write("\nEnter the roll number of the student :");
+        }
+    }
 }
