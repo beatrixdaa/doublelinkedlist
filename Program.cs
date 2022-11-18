@@ -30,6 +30,21 @@ namespace doublelinkedlist
             int rollNo;
             string nm;
             Console.Write("\nEnter the roll number of the student :");
+            nm = Console.ReadLine();
+            Node newnode = new Node();
+            newnode.rollNumber = rollNo;
+            newnode.name = nm; /*checks if the list is empty*/
+            if (START==null || rollNo <= START.rollNumber)
+            {
+                if ((START!= null)&&(rollNo== START.rollNumber))
+                {
+                    Console.WriteLine("\nDuplicatr roll number not allowed");
+                    return;
+                }
+
+            }
+
+
         }
     }
 }
